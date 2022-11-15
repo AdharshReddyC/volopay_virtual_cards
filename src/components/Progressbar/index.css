@@ -1,0 +1,14 @@
+.parent-div {
+  width: 100%;
+  background-color: green;
+  height: 10px;
+  border-radius: 30px;
+}
+
+.child-div {
+  height: 100%;
+
+  text-align: right;
+  background-color: #eb4869;
+  border-radius: 30px;
+}

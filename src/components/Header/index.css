@@ -1,0 +1,89 @@
+/* Header-top-container */
+.header-container {
+  padding: 32px;
+}
+.header-top-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-top-left-container {
+  display: flex;
+
+  align-items: center;
+}
+
+.virtual-cards-heading {
+  color: #494949;
+  margin-left: 16px;
+}
+
+.learn-more-text {
+  display: flex;
+  align-items: center;
+  color: #125bc1;
+  background-color: #f9f9f9;
+  border: none;
+  border-radius: 5px;
+  margin-left: 10px;
+}
+
+.video-icon {
+  margin-right: 5px;
+}
+
+.add-virtual-card-button {
+  background-color: transparent;
+  border: none;
+  padding: 5px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  cursor: pointer;
+}
+
+.plus-icon {
+}
+
+/* Header Bottom Container*/
+
+/* Tabs Names Navigator */
+
+.header-bottom-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tab-names-list {
+  display: flex;
+  list-style: none;
+  padding-left: 0px;
+}
+
+.link-item {
+  list-style-type: none;
+}
+
+.route-link {
+  color: #494949;
+
+  text-decoration: none;
+  margin-left: 16px;
+}
+
+/* Layout Changing Container */
+
+.layout-change-container {
+  display: flex;
+  align-items: center;
+}
+
+.layout-change-button {
+  background-color: transparent;
+  border: none;
+  margin-left: 5px;
+}
+
+.horizontal-line {
+  padding-top: 0px;
+}
