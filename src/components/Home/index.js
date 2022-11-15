@@ -90,16 +90,9 @@ class Home extends Component {
   )
 
   renderFailureView = () => (
-    <div className="products-error-view-container">
-      <img
-        src="https://assets.ccbp.in/frontend/react-js/nxt-trendz/nxt-trendz-products-error-view.png"
-        alt="all-products-error"
-        className="products-failure-img"
-      />
-      <h1 className="product-failure-heading-text">
-        Oops! Something Went Wrong
-      </h1>
-      <p className="products-failure-description">
+    <div>
+      <h1>Oops! Something Went Wrong</h1>
+      <p>
         We are having some trouble processing your request. Please try again.
       </p>
     </div>
@@ -120,7 +113,7 @@ class Home extends Component {
   }
 
   renderInfiniteCards = () => {
-    const {cardsList} = this.state
+    const {cardsList, page} = this.state
     const hasMore = true
     return (
       <InfiniteScroll

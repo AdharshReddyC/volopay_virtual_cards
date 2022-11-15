@@ -28,13 +28,15 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: green;
 }
 
 .filters-container {
   margin-right: 50px;
   width: 300px;
   padding: 10px;
+  position: relative;
+  background-color: #ffffff;
+  cursor: pointer;
 }
 
 .filters-heading {
@@ -87,6 +89,8 @@
   padding: 7px;
   color: #ffff;
   background-color: #499359;
+  cursor: pointer;
+
   border-radius: 5px;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   border: none;
@@ -95,6 +99,7 @@
 .clear-button {
   flex-grow: 1;
   color: black;
+  cursor: pointer;
   margin: 20px;
 
   background-color: #ffff;

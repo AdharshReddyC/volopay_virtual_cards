@@ -123,68 +123,8 @@ class FiltersSection extends Component {
             <BsFilter /> Filter
           </p>
         }
-        position="bottom left"
+        position="bottom right"
       >
-        <div className="filters-container">
-          <p>Filters</p>
-          <hr />
-          <p>type</p>
-          <div className="checkbox-container">
-            <label htmlFor="subscription">Subscription</label>
-            <input
-              type="checkbox"
-              id="subscription"
-              value="subscription"
-              onChange={this.onChangeCardType}
-            />
-          </div>
-
-          <div>
-            <label htmlFor="burner">Burner</label>
-            <input
-              type="checkbox"
-              id="burner"
-              value="burner"
-              onChange={this.onChangeCardType}
-            />
-          </div>
-        </div>
-      </Popup>
-    </div>
-  )
-
-  renderFiltersHeader = () => {
-    const {showSearchInput} = this.state
-    return (
-      <div className="filters-header-container">
-        {showSearchInput ? (
-          <div
-            className="search-input-container"
-            onBlur={this.changeSearchIconState}
-          >
-            <input
-              type="search"
-              className="search-input"
-              placeholder="Search"
-              onChange={this.onChangeSearchInput}
-            />
-            <BsSearch className="search-icon" />
-          </div>
-        ) : (
-          <p className="filter-item" onClick={this.changeSearchIconState}>
-            <BsSearch />
-          </p>
-        )}
-
-        {this.renderFilterPopup()}
-      </div>
-    )
-  }
-
-  render() {
-    return (
-      <div className="filters-group-container">
-        {this.renderFiltersHeader()}
         <div className="filters-container">
           <p className="filters-heading">Filters</p>
           <hr />
@@ -239,6 +179,42 @@ class FiltersSection extends Component {
             </button>
           </div>
         </div>
+      </Popup>
+    </div>
+  )
+
+  renderFiltersHeader = () => {
+    const {showSearchInput} = this.state
+    return (
+      <div className="filters-header-container">
+        {showSearchInput ? (
+          <div
+            className="search-input-container"
+            onBlur={this.changeSearchIconState}
+          >
+            <input
+              type="search"
+              className="search-input"
+              placeholder="Search"
+              onChange={this.onChangeSearchInput}
+            />
+            <BsSearch className="search-icon" />
+          </div>
+        ) : (
+          <p className="filter-item" onClick={this.changeSearchIconState}>
+            <BsSearch />
+          </p>
+        )}
+
+        {this.renderFilterPopup()}
+      </div>
+    )
+  }
+
+  render() {
+    return (
+      <div className="filters-group-container">
+        {this.renderFiltersHeader()}
       </div>
     )
   }
