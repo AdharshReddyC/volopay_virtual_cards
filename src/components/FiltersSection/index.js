@@ -42,7 +42,8 @@ class FiltersSection extends Component {
   }
 
   onApply = () => {
-    const {cardHolder, cardTypeList} = this.state
+    let {cardHolder} = this.state
+    const {cardTypeList} = this.state
 
     let [cardType1, cardType2] = cardTypeList
 
@@ -50,6 +51,9 @@ class FiltersSection extends Component {
       cardType1 = ''
     } else if (cardType2 === undefined) {
       cardType2 = ''
+    }
+    if (cardHolder === undefined) {
+      cardHolder = ''
     }
 
     const {applyFilters} = this.props

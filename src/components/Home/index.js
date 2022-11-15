@@ -34,10 +34,18 @@ class Home extends Component {
   applyFilters = (cardHolder, cardType1, cardType2) => {
     console.log(cardHolder, cardType1, cardType2)
     const {cardsList} = this.state
+    const filteredData = cardsList.filter(
+      eachCard =>
+        eachCard.cardHolder === cardHolder.toLowerCase() ||
+        eachCard.cardType === cardType1 ||
+        eachCard.cardType === cardType2,
+    )
+
+    console.log(filteredData)
+    this.setState({cardsList: filteredData}, this.getCardsData)
   }
 
   getCardsData = async () => {
-    console.log('called')
     this.setState({
       apiStatus: apiStatusConstants.inProgress,
     })
